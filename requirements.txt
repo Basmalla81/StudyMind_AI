@@ -1,0 +1,33 @@
+# ---------- Backend ----------
+fastapi
+uvicorn[standard]
+python-multipart        # needed by FastAPI for PDF file uploads
+pydantic
+python-dotenv           # load API keys from a .env file
+
+# ---------- PDF processing ----------
+pymupdf
+
+# ---------- Embeddings + vector database (RAG) ----------
+sentence-transformers   # installs PyTorch automatically (big download)
+chromadb
+
+# ---------- Database (PostgreSQL) ----------
+sqlalchemy
+psycopg2-binary
+
+# ---------- LLM API (uncomment the one you choose) ----------
+# groq
+# openai
+# anthropic
+
+# ---------- Data + evaluation ----------
+numpy
+pandas
+
+# ---------- Testing ----------
+pytest
+httpx
+
+# ---------- Jupyter (VS Code notebooks) ----------
+ipykernel
