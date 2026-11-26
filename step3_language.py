@@ -54,7 +54,7 @@ def add_language(pages):
 
 
 if __name__ == "__main__":
-    pdf_path = "lecture.pdf"
+    pdf_path = "Computational Models.pdf"
 
     pages = build_clean_pages(extract_pages(pdf_path))
     pages = add_language(pages)

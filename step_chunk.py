@@ -26,22 +26,21 @@ def count_words(text: str) -> int:
     return len(text.split())
 
 def merge_wrapped_lines(text: str) -> list[str]:
-    """
-    A PDF breaks a paragraph into visual lines, even in the middle of a
-    sentence. Join a line to the next one when it is long (8+ words) and
-    does not end with sentence punctuation, so sentences stay whole.
-    Short lines (titles, bullets) stay separate.
-    """
 
     lines = []
+    raw_lines = text.split("\n")
+    full_width = max((len(l) for l in raw_lines), default=0) * 0.85   # جديد
 
-    for line in text.split("\n"):
+    for line in raw_lines:
         previous = lines[-1] if lines else ""
 
         if (
             previous
             and len(previous.split()) >= 8
             and not previous.endswith((".", "!", "?", "؟", "۔", ":", ";"))
+            and len(previous) >= full_width                            # جديد: السطر اللي قبله واصل لعرض الصفحة
+            and not line[:1].isupper()                                 # جديد: السطر ده مش بادئ بحرف كبير
+            and line.split()[0] not in ("-", "•", "*", "▪", "–")       # جديد: مش bullet
         ):
             lines[-1] = previous + " " + line
         else:
@@ -175,7 +174,7 @@ def build_chunks(
 
 if __name__ == "__main__":
     # Replace this with the path of any lecture PDF.
-    pdf_path = "lecture.pdf"
+    pdf_path = "Computational Models.pdf"
 
     pages = add_language(build_clean_pages(extract_pages(pdf_path)))
     chunks = build_chunks(pages, lecture_id="demo")

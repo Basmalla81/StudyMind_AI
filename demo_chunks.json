@@ -1,0 +1,178 @@
+[
+  {
+    "chunk_id": "demo_0001",
+    "lecture_id": "demo",
+    "page_number": 2,
+    "language": "English",
+    "text": "1-Provide Abstract (Mathematical) machines:\n2-Analyze power of Models:\nWhat computational problems\ncan each model solve?\nCourse Goals\nHow much time we need to\nsolve the problems?\nAnswer Intractability questions:\nAnswer Time Complexity questions:\nFinite Automata, Pushdown Automata, and\nTuring Machines As a computational Models",
+    "word_count": 44
+  },
+  {
+    "chunk_id": "demo_0002",
+    "lecture_id": "demo",
+    "page_number": 3,
+    "language": "English",
+    "text": "CPU\nmemory\nA widely accepted model of computation",
+    "word_count": 8
+  },
+  {
+    "chunk_id": "demo_0003",
+    "lecture_id": "demo",
+    "page_number": 4,
+    "language": "English",
+    "text": "CPU\ninput\noutput\nProgram memory\ntemporary memory\nThe different components of memory",
+    "word_count": 12
+  },
+  {
+    "chunk_id": "demo_0004",
+    "lecture_id": "demo",
+    "page_number": 5,
+    "language": "English",
+    "text": "CPU\ninput\noutput\nProgram memory\ntemporary memory\n)\n(\nx\nx\nf\n=\ncompute\nx\nx*\ncompute\nx\nx *\nExample:",
+    "word_count": 21
+  },
+  {
+    "chunk_id": "demo_0005",
+    "lecture_id": "demo",
+    "page_number": 6,
+    "language": "English",
+    "text": "CPU\ninput\noutput\nProgram memory\ntemporary memory\n)\n(\nx\nx\nf\n=\ncompute\nx\nx*\ncompute\nx\nx *\n=\nx",
+    "word_count": 22
+  },
+  {
+    "chunk_id": "demo_0006",
+    "lecture_id": "demo",
+    "page_number": 7,
+    "language": "English",
+    "text": "CPU\ninput\noutput\nProgram memory\ntemporary memory\n)\n(\nx\nx\nf\n=\ncompute\nx\nx*\ncompute\nx\nx *\n=\nx\n*\n=\n=\nz\n*\n)\n(\n=\n=z\nx\nf",
+    "word_count": 33
+  },
+  {
+    "chunk_id": "demo_0007",
+    "lecture_id": "demo",
+    "page_number": 8,
+    "language": "English",
+    "text": "CPU\ninput\noutput\nProgram memory\ntemporary memory\n)\n(\nx\nx\nf\n=\ncompute\nx\nx*\ncompute\nx\nx *\n=\nx\n*\n=\n=\nz\n*\n)\n(\n=\n=z\nx\nf\n)\n(\n=\nx\nf",
+    "word_count": 38
+  },
+  {
+    "chunk_id": "demo_0008",
+    "lecture_id": "demo",
+    "page_number": 9,
+    "language": "English",
+    "text": "Automaton\nCPU\ninput\noutput\nProgram memory\ntemporary memory\nAutomaton",
+    "word_count": 9
+  },
+  {
+    "chunk_id": "demo_0009",
+    "lecture_id": "demo",
+    "page_number": 10,
+    "language": "Mixed",
+    "text": "• اذا اعتبرنا ان CPU قبل بدأ المعالجة كانت بعض الدوائر off وبعضها on\n• فأن هذا ال configuration يسمي الحالة االبتدائية لل initial state-CPU\n• بعد مرور وحدة زمن من زمن المعالجة ينتقل المعالج الي configuration جديد\n• The CPU after unite of time make transition from\ninitial state to a new state and so on.\n• وتكون المعالجة عند ال final state الحل المقبول للمسألة\n• .\nوعليه يمكن دراسة ال CPU وهو يعالج البرنامج as a directed graph\n• The CPU with the running program can be studied as\n• mathematical model ” directed graph” which is termed\n• “ finite automat”",
+    "word_count": 105
+  },
+  {
+    "chunk_id": "demo_0010",
+    "lecture_id": "demo",
+    "page_number": 11,
+    "language": "English",
+    "text": "Automaton\ninput\noutput\ntemporary memory\nAutomaton\nstate\ntransition\nCPU+ProgramMem = States + Transitions",
+    "word_count": 13
+  },
+  {
+    "chunk_id": "demo_0011",
+    "lecture_id": "demo",
+    "page_number": 12,
+    "language": "English",
+    "text": "Different Kinds of Automata\nAutomata are distinguished by the temporary memory\n• Finite Automata:\nno temporary memory\n• Pushdown Automata:\nstack\n• Turing Machines:\nrandom access memory",
+    "word_count": 27
+  },
+  {
+    "chunk_id": "demo_0012",
+    "lecture_id": "demo",
+    "page_number": 13,
+    "language": "English",
+    "text": "Memory affects computational power:\nMore flexible memory\nresults to\nThe solution of more computational\nproblems",
+    "word_count": 15
+  },
+  {
+    "chunk_id": "demo_0013",
+    "lecture_id": "demo",
+    "page_number": 14,
+    "language": "English",
+    "text": "input\noutput\ntemporary memory\nFinite\nAutomaton\nFinite Automaton\nExample: Elevators, Vending Machines,\nLexical Analyzers\n(small computing power)",
+    "word_count": 17
+  },
+  {
+    "chunk_id": "demo_0014",
+    "lecture_id": "demo",
+    "page_number": 15,
+    "language": "English",
+    "text": "• The start state 1 represent “on the first floor”\n• The state 2 represent “on the second floor”\n• The state 3 represent “on the third floor”\n• The state 4 “the goal- on the fourth floor”\nGo up Elevator for 4-floor building.\n-",
+    "word_count": 45
+  },
+  {
+    "chunk_id": "demo_0015",
+    "lecture_id": "demo",
+    "page_number": 16,
+    "language": "English",
+    "text": "Rule-based system for elevator\n•\nData base of rules Data set of Facts\n•\n•\nScenario 1 : The system examines the rules and find that fact1and 2 match the antecedents of rule 3.\nHence, rule 3 fires, and its conclusion\nGo to third floor\nis added to the database of Facts.\nRule 1\nIf on first floor\nAND button is pressed on first floor\nThen open door\nRule 2\nIf on first floor\nAND button is pressed on second floor\nThen go to second floor.\nRule 3\nIf on first floor\nAND button is pressed on third floor\nThen go to third floor\nRule 4\nIf on second floor\nAND button is pressed on first floor.\nAND already going to third floor\nThen remember to go to first floor later.\nRule 5\n…………..\nRule 6\n………….\nFact 1\non the first floor\nFact 2\nbutton is pressed on third floor\nFact 3\nToday is Saturday\nFact 4\n……………\nFact 1\non the first floor\nFact 2\nbutton is pressed on third floor\nFact 3\nToday is Saturday\nFact 4\nGo to third floor",
+    "word_count": 184
+  },
+  {
+    "chunk_id": "demo_0016",
+    "lecture_id": "demo",
+    "page_number": 17,
+    "language": "English",
+    "text": "Finite automat for switch on/off\n•\n•",
+    "word_count": 7
+  },
+  {
+    "chunk_id": "demo_0017",
+    "lecture_id": "demo",
+    "page_number": 18,
+    "language": "English",
+    "text": "Finite automat for lexical analysis of programming languages\n•\n•\nFigure 1.3 : A finite automaton for numbers\n.",
+    "word_count": 19
+  },
+  {
+    "chunk_id": "demo_0018",
+    "lecture_id": "demo",
+    "page_number": 19,
+    "language": "English",
+    "text": "input\noutput\nStack\nPushdown\nAutomaton\nPushdown Automaton\nExample: Parsers for Programming Languages\n(medium computing power)\nPush, Pop\nTemp.\nmemory",
+    "word_count": 19
+  },
+  {
+    "chunk_id": "demo_0019",
+    "lecture_id": "demo",
+    "page_number": 20,
+    "language": "English",
+    "text": "input\noutput\nRandom Access Memory\nTuring\nMachine\nTuring Machine\nExamples: Any Algorithm\n(highest known computing power)\nTemp.\nmemory",
+    "word_count": 18
+  },
+  {
+    "chunk_id": "demo_0020",
+    "lecture_id": "demo",
+    "page_number": 21,
+    "language": "English",
+    "text": "Finite\nAutomata\nPushdown\nAutomata\nTuring\nMachine\nPower of Automata\nLess power\nMore power\nSolve more\ncomputational problems\nSimple\nproblems\nMore complex\nproblems\nHardest\nproblems",
+    "word_count": 24
+  },
+  {
+    "chunk_id": "demo_0021",
+    "lecture_id": "demo",
+    "page_number": 22,
+    "language": "English",
+    "text": "Turing Machine is the most powerful\nknown computational model\nQuestion: can Turing Machines solve\nall computational problems?\nAnswer: NO\n(there are unsolvable problems)",
+    "word_count": 23
+  },
+  {
+    "chunk_id": "demo_0022",
+    "lecture_id": "demo",
+    "page_number": 23,
+    "language": "English",
+    "text": "Time Complexity of Computational Problems:\nNP-complete problems:\nP problems:\nBelieved to take exponential\ntime to be solved\nSolved in polynomial time\n(Polynomial time problems)\n(Non-deterministic Polynomial time problems)",
+    "word_count": 28
+  }
+]
